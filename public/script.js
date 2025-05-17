@@ -8,6 +8,7 @@ const usernameInput = document.getElementById('username');
 const roomInput = document.getElementById('room');
 const messageInput = document.getElementById('message');
 const messagesEl = document.getElementById('messages');
+const container = document.getElementById('container');
 
 const deleteBtn = document.getElementById('delete-messages');
 
@@ -28,6 +29,7 @@ loginForm.addEventListener('submit', (e) => {
     loginSection.style.display = 'none';
     chatSection.style.display = 'block';
     deleteBtn.style.display = 'block';
+    container.style.display = 'flex';
   }
 });
 
